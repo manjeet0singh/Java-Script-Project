@@ -151,10 +151,10 @@ c2 = avg(14, 16);
 
 
 // if- statement
-var age = 34;
-if (age > 8) {
-    console.log('You are Not a Kid')
-}
+// var age = 34;
+// if (age > 8) {
+//     console.log('You are Not a Kid')
+// }
 
 
 // if- else statement
@@ -249,7 +249,7 @@ var age = 11;
 
 let myArr = ["Fan", "Camera", 34, null, true];
 // Array Methods
-console.log(myArr.length);
+// console.log(myArr.length);
 // myArr.pop();
 // myArr.push("manjeet")
 // myArr.shift()
@@ -265,6 +265,112 @@ console.log(myArr.length);
 // String Methods i9n JavaScript
 let myLovelyString = "Manjeet is a good boy ! His Heabits  good is very good";
 // console.log(myLovelyString.length)
+// console.log(myLovelyString.indexOf("good"))
 // console.log(myLovelyString.lastIndexOf("good"))
 
-console.log(myLovelyString.slice(1,4))
+// console.log(myLovelyString.slice(1,3))
+d = myLovelyString.replace("Manjeet", "Shadab")
+// console.log("Manjeet","Shadab")
+// console.log(d,myLovelyString)
+
+
+let myDate = new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getMonth());
+
+
+// DOM MAIPLATION
+let elem = document.getElementById('click');
+// console.log(elem);
+
+let elemClass = document.getElementsByClassName("container");
+// console.log(elemClass);
+// elemClass[0].style.background = "yellow";
+elemClass[0].classList.add("bg-primary");
+elemClass[0].classList.add("text-success");
+
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+
+
+
+// console.log(elemClass[0].innerHTML);
+// console.log(elemClass[0].innerText);
+
+// tn = document.getElementsByTagName('button')
+// tn = document.getElementsByTagName('div')
+// console.log(tn)
+// createdElement = document.createElement('p');
+// createdElement.innerText = "This is a created Para";
+// tn[0].appendChild(createdElement);
+
+// createdElement2 = document.createElement('b');
+// createdElement2.innerText = "This is a created bold";
+// tn[0].replaceChild(createdElement2, createdElement);
+
+// removeChild(element);
+
+
+
+// selecting using Query
+// sel = document.querySelector('.container')
+// console.log(sel)
+
+// sel = document.querySelector('.container')
+// console.log(sel)
+
+
+
+// function clicked() {
+//     console.log('The button was clicked')
+// }
+// window.onload = function () {
+//     console.log('The document Was Loaded')
+// }
+
+// Events in JavaScript
+// firstContainer.addEventListener('click',function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>We have</b>"
+//     console.log("clicked On Container");
+// })
+
+// firstContainer.addEventListener('mouseover',function(){
+//     console.log("mouse On Container");
+// })
+
+// firstContainer.addEventListener('mouseout',function(){
+//     console.log("mouse out Container");
+// })
+
+// let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+// firstContainer.addEventListener('mouseup', function () {
+//     document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+//     console.log("mouse up  when clicked on Container");
+// })
+
+
+// firstContainer.addEventListener('mousedown', function () {
+//     document.querySelectorAll('.container')[1].innerHTML = "<b>We have a good day</b>"
+//     console.log("mouse down when clicked on Container");
+// })
+
+// function summ(a,b) {
+//     return a+b;
+    
+// }
+
+summ = (a,b)=>{
+    return a+b;
+}
+logKro = ()=>{
+        document.querySelectorAll('.container')[1].innerHTML = "<b>set Interval fire</b>"
+
+    console.log("i am your  log")
+}
+
+// setTimeout and setinteravel
+// setTimeout(logKro,2000);
+setInterval(logKro,2000);
